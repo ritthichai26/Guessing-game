@@ -10,7 +10,7 @@ if (!isset($_SESSION['target_number'])) {
 // Assign session variables to local variables for better readability
 $target_number = $_SESSION['target_number'];
 $guesses = $_SESSION['guesses'];
-$show = $show['show'];
+
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $guess = isset($_POST['guess']) ? (int)$_POST['guess'] : null;
